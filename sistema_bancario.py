@@ -59,6 +59,7 @@ Escolha uma opção: """)
       
   # OPÇÃO EXTRATO
   elif opcao == 'C' or opcao == 'c':
+    extrato += "Acesso ao extrato bancário\n"
     # caso a var "extrato" estiver vazia, mostrará a string "Ainda não foram re..." na tela. Caso contrário, se a var "extrato" conter algum conteúdo, o mostrará na tela
     print(f"""
 -----------------------------
@@ -66,7 +67,7 @@ EXTRATO DA CONTA BANCÁRIA
 -----------------------------
 HISTÓRICO
 -----------------------------""")
-    print(f"Ainda não foram realizadas movimentações na conta." if not extrato else extrato)
+    print(f"- Ainda não foram realizadas movimentações na conta." if not extrato else extrato)
     print(f"""-----------------------------
 INFORMAÇÕES GERAIS DA CONTA
 -----------------------------
